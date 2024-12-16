@@ -130,6 +130,8 @@ Partiremos en la creación de los regresores con las redes neuronales, los cuale
 #### 4.1.1 TF-IDF
 Utilizando este tipo de vectorización en nuestra red neuronal obtenemos las siguientes pérdidas:
 
+![Imagen 2](imagenestdproyecto/LossesTF-IDF.PNG)
+
 #### 4.1.2 Doc2Vec
 Utilizando este tipo de vectorización en nuestra red neuronal obtenemos las siguientes pérdidas:
 
