@@ -159,7 +159,7 @@ Utilizando este tipo de vectorización en nuestra regresor KNN obtenemos las sig
 #### 4.2.3 BERT
 Utilizando este tipo de vectorización en nuestra regresor KNN obtenemos las siguientes pérdidas:
 
-![Imagen 2](imagenestdproyecto/LossBERT.PNG)
+![Imagen 2](imagenestdproyecto/LossBERT.png)
 
 # 5. Hugging face
 En este apartado se utilizará hugging face que permite cargar y procesar conjuntos de datos fácilmente, se realizará un pequeño preprocesado para convertir las instrucciones de las recetas a una cadena (en caso de que lo sea no hace nada). En este caso los tokens se realizan automaticamente con un tokenizador(bert-base-uncased), para cargar el modelo de regresión se configura un solo valor de salida (num_labels=1). Se entrena el modelo, para ello los parámetros desctacados que se utilizan son la tasa de aprendizaje (fijada en 2e^-5), el numero de epocas (fijado en 3) y el decaimiento de pesos (fijado en 0.01). La tasa es baja ya que si se sube demasiado puede llegar a sobreajustes y como consecuencia un entrenamiento poco eficiente. El numero de epocas define cuantas veces el modelo 'pasa' por el conjunto de datos, se escoge 3 ya que es un valor que se suele utilizar con estos modelos. Por último el decaimiento de pesos sirve para evitar sobreajustes y básicamente sirve para que los pesos no se vuelvan demasiado grandes. Una vez entrenado se evalúa el modelo.  Debido a limitaciones de RAM no se podrá implementar este apartado.
