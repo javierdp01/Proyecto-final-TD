@@ -121,3 +121,30 @@ Por último se utiliza el modelo BERT(Bidirectional Encoder Representations from
 
 ![Imagen 2](imagenestdproyecto/Bert.PNG)
 
+## 4. Entrenamiento y evaluación de regresión
+Para esta parte del proyecto comenzaremos creando los sets de entrenamiento y validación para cada tipo de vectorización mediante la función "train_test_split", donde dividiremos los datos obtenidos de la verifiación en 2 variables, una de entrenamiento (X_train_"tipo de vectorización") y otra de validación (Y_train_"tipo de vectorización") y repetiremos lo mismo para la salida pero utilizando en este caso los datos de la columna "raiting". Tras esto, ya podremos empezar a crear los regresores.
+
+### 4.1 Redes Neuronales
+Partiremos en la creación de los regresores con las redes neuronales, los cuales, en todos los casos de vectorización, utilizaran la misma arquitectura de la red. Esta arquitectura se compondrá de 128 neuronas y se emplearan 3 transformaciones lineales. Tras la creación de la red, utilizaremos para las pérdidas la función "MSELoss()", que nos permitirá calcular el error cuadrático medio de nuestro regresor. Sabiendo todo esto, entrenaremos nuestro modelo y obtendremos las pérdidas producidas al utilizar los valores de entrenamiento y de validación durante cada valor de epoch del entrenamiento de la red, obteniendo las siguientes gráficas.
+
+#### 4.1.1 TF-IDF
+Utilizando este tipo de vectorización en nuestra red neuronal obtenemos las siguientes pérdidas:
+
+#### 4.1.2 Doc2Vec
+Utilizando este tipo de vectorización en nuestra red neuronal obtenemos las siguientes pérdidas:
+
+#### 4.1.3 BERT
+Utilizando este tipo de vectorización en nuestra red neuronal obtenemos las siguientes pérdidas:
+
+### 4.2 Regresor KNN
+Por último, veremos el error al haber utilizado, en este caso, el regresor K-NN con un único vecino
+
+#### 4.2.1 TF-IDF
+Utilizando este tipo de vectorización en nuestro regresor KNN obtenemos las siguientes pérdidas:
+
+#### 4.2.2 Doc2Vec
+Utilizando este tipo de vectorización en nuestra regresor KNN obtenemos las siguientes pérdidas:
+
+#### 4.2.3 BERT
+Utilizando este tipo de vectorización en nuestra regresor KNN obtenemos las siguientes pérdidas:
+
