@@ -135,14 +135,20 @@ Utilizando este tipo de vectorización en nuestra red neuronal obtenemos las sig
 #### 4.1.2 Doc2Vec
 Utilizando este tipo de vectorización en nuestra red neuronal obtenemos las siguientes pérdidas:
 
+![Imagen 2](imagenestdproyecto/Lossesdoc2vec.PNG)
+
 #### 4.1.3 BERT
 Utilizando este tipo de vectorización en nuestra red neuronal obtenemos las siguientes pérdidas:
 
 ### 4.2 Regresor KNN
 Por último, veremos el error al haber utilizado, en este caso, el regresor K-NN con un único vecino
 
+![Imagen 2](imagenestdproyecto/LossTF-IDF.PNG)
+
 #### 4.2.1 TF-IDF
 Utilizando este tipo de vectorización en nuestro regresor KNN obtenemos las siguientes pérdidas:
+
+![Imagen 2](imagenestdproyecto/Lossdoc2vec.PNG)
 
 #### 4.2.2 Doc2Vec
 Utilizando este tipo de vectorización en nuestra regresor KNN obtenemos las siguientes pérdidas:
