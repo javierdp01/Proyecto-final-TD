@@ -120,7 +120,7 @@ En esta ocasión se entrena un modelo Word2Vec y se utiliza como entrada 'mycorp
 ### 3.3 BERT
 Por último se utiliza el modelo BERT(Bidirectional Encoder Representations from Transformers), a diferencia de los anteriores BERT genera embeddings dependiendo del contexto de la palabra. Como resultado se obtiene un vector para cada documento. En la imagen inferior se observa la representación de BERT del primer documento.
 
-![Imagen 2](imagenestdproyecto/Bert.PNG)
+![Imagen 2](imagenestdproyecto/bert.png)
 
 ## 4. Entrenamiento y evaluación de regresión
 Para esta parte del proyecto comenzaremos creando los sets de entrenamiento y validación para cada tipo de vectorización mediante la función "train_test_split", donde dividiremos los datos obtenidos de la verifiación en 2 variables, una de entrenamiento (X_train_"tipo de vectorización") y otra de validación (Y_train_"tipo de vectorización") y repetiremos lo mismo para la salida pero utilizando en este caso los datos de la columna "raiting". Tras esto, ya podremos empezar a crear los regresores.
