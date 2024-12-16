@@ -25,9 +25,11 @@ Al representar esto tampoco se obtiene mucha información ya que no se puede obs
 
 ![Imagen 1](imagenestdproyecto/top10confiltro.PNG)  
 
-En este gráfico se puede observar una correlación directa entre el rating y las categorías más populares
+En este gráfico se puede observar una correlación directa entre el rating y las categorías.Destaca que hay muchas categorías relacionadas con carne, esto puede significar que una receta que influya carne suele tener mayor rating, se puede deber a que la carne es un alimento que gusta mucho en general. 
 
 ![Imagen 2](imagenestdproyecto/top10peoresconfilt.PNG)
 
-E
+En este gráfico se puede sacar otra correlación directa entre el rating y las categorías (en este caso las de menor puntuación), se puede apreciar como varias de estas categorías contienen alcohol (Gin, Bitters, Alcoholic, Pernod, Fortified Wine), esto se puede deber o a que son difíciles de realizar o a que al contener alcohol no es bueno para la salud o tiene un sabor más fuerte que puede resultar a ser desagradable. También se pueden ver ciertas categorías como 'Weelicious' (web de recetas rápidas) y 'HarperCollins' (Editorial), esto se puede deber a que las recetas procedentes de esa web o editorial no sean de calidad.
+
+En definitiva se puede deducir que las recetas que contengan carne tendrán un ratin más alto y las que contengan alcochol o procedan de determinadas webs y editoriales tendrán un peor rating.
 
