@@ -33,3 +33,4 @@ En este gráfico se puede sacar otra correlación directa entre el rating y las 
 
 En definitiva se puede deducir que las recetas que contengan carne tendrán un ratin más alto y las que contengan alcochol o procedan de determinadas webs y editoriales tendrán un peor rating.
 
+## 2. Pipeline
