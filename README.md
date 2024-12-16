@@ -1,4 +1,5 @@
 # Proyecto-final-TD
+En este proyecto se realizará una tarea de regresión mediante las vectorizaciones que se hallen a traveés de las variables de entrada como 'categories' o 'directions' y la variable 'rating' será la variable de salida. Se realizarán diversos analisis de dichas variables, procesado de textos, representación vectorial, entrenamiento y evaluación, hugging face y por último una pequeña extensión que realizará resúmenes y generación de unas recetas mediante un texto proporcionado.
 ## 1. Análisis de la variable rating y categories
 En este apartado se realizará un análisis de ambas variables y se tratarán de averiguar problemas o deducir correlaciones entre determinadas categorías y la variable de salida rating. La variable rating representa la puntuación de la receta por lo que es un buen parámetro para determinar si es una buena o mala receta. Primero se realizará una representación de la distribución del rating.
 
@@ -156,3 +157,15 @@ Utilizando este tipo de vectorización en nuestra regresor KNN obtenemos las sig
 #### 4.2.3 BERT
 Utilizando este tipo de vectorización en nuestra regresor KNN obtenemos las siguientes pérdidas:
 
+
+# 5. Hugging face
+En este apartado se utilizará hugging face que permite cargar y procesar conjuntos de datos fácilmente, se realizará un pequeño preprocesado para convertir las instrucciones de las recetas a una cadena (en caso de que lo sea no hace nada). En este caso los tokens se realizan automaticamente con un tokenizador(bert-base-uncased), para cargar el modelo de regresión se configura un solo valor de salida (num_labels=1). Se entrena el modelo, para ello los parámetros desctacados que se utilizan son la tasa de aprendizaje (fijada en 2e^-5), el numero de epocas (fijado en 3) y el decaimiento de pesos (fijado en 0.01). La tasa es baja ya que si se sube demasiado puede llegar a sobreajustes y como consecuencia un entrenamiento poco eficiente. El numero de epocas define cuantas veces el modelo 'pasa' por el conjunto de datos, se escoge 3 ya que es un valor que se suele utilizar con estos modelos. Por último el decaimiento de pesos sirve para evitar sobreajustes y básicamente sirve para que los pesos no se vuelvan demasiado grandes. Una vez entrenado se evalúa el modelo. 
+
+# 6. EXTRA
+En este apartado se realizarón dos adiciones que se cree que son ideales para poder mejorar el proyecto, optimizarlo e incluso proporcionar nuevas herramientas. La primera implementación es realizar un resumen de la cabecera directions de una receta y solo se realizará a las 20 primeras como ejemplo (por tiempo). El summarizer es un pipeline de Hugging Face y utiliza el modelo BART (que ya esta preentrenado) para generar un resumen de un texto, se realizaron una serie de ajustes para evitar warnings relacionados con la longitud. En la imagen inferior se muestra un ejemplo de una receta resumida
+
+![Imagen 2](imagenestdproyecto/Lossdoc2vec.PNG)
+
+La segunda implementación es la generación de recetas con GPT-2 en la que se define un prompt con una receta que se quiera hacer y gpt-2 debe generar una receta con la información que se le proporciona. En la imagen inferior se puede ver la receta generada.
+
+![Imagen 2](imagenestdproyecto/Lossdoc2vec.PNG)
